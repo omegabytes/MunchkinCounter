@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func scoreBoardButtonPressed(sender: UIButton) {
+    }
+    
+    @IBAction func faqsAndRulesButtonPressed(sender: UIButton) {
+    }
 
+    @IBAction func settingsButtonPressed(sender: UIButton) {
+    }
 }
 
