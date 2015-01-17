@@ -19,14 +19,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    }
 
     @IBAction func scoreBoardButtonPressed(sender: UIButton) {
+        performSegueWithIdentifier("showScoreBoard", sender: self)
     }
     
     @IBAction func faqsAndRulesButtonPressed(sender: UIButton) {
+        performSegueWithIdentifier("showFAQsAndRules", sender: self)
     }
 
     @IBAction func settingsButtonPressed(sender: UIButton) {
+        performSegueWithIdentifier("showSettings", sender: self)
     }
 }
 
