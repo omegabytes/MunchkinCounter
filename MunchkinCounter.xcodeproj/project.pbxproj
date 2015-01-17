@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD5BCB951A6AB6BB001B0BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCB941A6AB6BB001B0BBC /* AppDelegate.swift */; };
+		DD5BCB981A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCB961A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodeld */; };
+		DD5BCB9A1A6AB6BB001B0BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCB991A6AB6BB001B0BBC /* ViewController.swift */; };
+		DD5BCB9D1A6AB6BB001B0BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5BCB9B1A6AB6BB001B0BBC /* Main.storyboard */; };
+		DD5BCB9F1A6AB6BB001B0BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5BCB9E1A6AB6BB001B0BBC /* Images.xcassets */; };
+		DD5BCBA21A6AB6BB001B0BBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5BCBA01A6AB6BB001B0BBC /* LaunchScreen.xib */; };
+		DD5BCBAE1A6AB6BB001B0BBC /* MunchkinCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCBAD1A6AB6BB001B0BBC /* MunchkinCounterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD5BCBA81A6AB6BB001B0BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5BCB871A6AB6BB001B0BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5BCB8E1A6AB6BB001B0BBC;
+			remoteInfo = MunchkinCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD5BCB8F1A6AB6BB001B0BBC /* MunchkinCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MunchkinCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5BCB931A6AB6BB001B0BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5BCB941A6AB6BB001B0BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD5BCB971A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MunchkinCounter.xcdatamodel; sourceTree = "<group>"; };
+		DD5BCB991A6AB6BB001B0BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD5BCB9C1A6AB6BB001B0BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD5BCB9E1A6AB6BB001B0BBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD5BCBA11A6AB6BB001B0BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DD5BCBA71A6AB6BB001B0BBC /* MunchkinCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MunchkinCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5BCBAC1A6AB6BB001B0BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5BCBAD1A6AB6BB001B0BBC /* MunchkinCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchkinCounterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD5BCB8C1A6AB6BB001B0BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5BCBA41A6AB6BB001B0BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD5BCB861A6AB6BB001B0BBC = {
+			isa = PBXGroup;
+			children = (
+				DD5BCB911A6AB6BB001B0BBC /* MunchkinCounter */,
+				DD5BCBAA1A6AB6BB001B0BBC /* MunchkinCounterTests */,
+				DD5BCB901A6AB6BB001B0BBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD5BCB901A6AB6BB001B0BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BCB8F1A6AB6BB001B0BBC /* MunchkinCounter.app */,
+				DD5BCBA71A6AB6BB001B0BBC /* MunchkinCounterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD5BCB911A6AB6BB001B0BBC /* MunchkinCounter */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BCB941A6AB6BB001B0BBC /* AppDelegate.swift */,
+				DD5BCB991A6AB6BB001B0BBC /* ViewController.swift */,
+				DD5BCB9B1A6AB6BB001B0BBC /* Main.storyboard */,
+				DD5BCB9E1A6AB6BB001B0BBC /* Images.xcassets */,
+				DD5BCBA01A6AB6BB001B0BBC /* LaunchScreen.xib */,
+				DD5BCB961A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodeld */,
+				DD5BCB921A6AB6BB001B0BBC /* Supporting Files */,
+			);
+			path = MunchkinCounter;
+			sourceTree = "<group>";
+		};
+		DD5BCB921A6AB6BB001B0BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BCB931A6AB6BB001B0BBC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD5BCBAA1A6AB6BB001B0BBC /* MunchkinCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BCBAD1A6AB6BB001B0BBC /* MunchkinCounterTests.swift */,
+				DD5BCBAB1A6AB6BB001B0BBC /* Supporting Files */,
+			);
+			path = MunchkinCounterTests;
+			sourceTree = "<group>";
+		};
+		DD5BCBAB1A6AB6BB001B0BBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5BCBAC1A6AB6BB001B0BBC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD5BCB8E1A6AB6BB001B0BBC /* MunchkinCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5BCBB11A6AB6BB001B0BBC /* Build configuration list for PBXNativeTarget "MunchkinCounter" */;
+			buildPhases = (
+				DD5BCB8B1A6AB6BB001B0BBC /* Sources */,
+				DD5BCB8C1A6AB6BB001B0BBC /* Frameworks */,
+				DD5BCB8D1A6AB6BB001B0BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MunchkinCounter;
+			productName = MunchkinCounter;
+			productReference = DD5BCB8F1A6AB6BB001B0BBC /* MunchkinCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD5BCBA61A6AB6BB001B0BBC /* MunchkinCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5BCBB41A6AB6BB001B0BBC /* Build configuration list for PBXNativeTarget "MunchkinCounterTests" */;
+			buildPhases = (
+				DD5BCBA31A6AB6BB001B0BBC /* Sources */,
+				DD5BCBA41A6AB6BB001B0BBC /* Frameworks */,
+				DD5BCBA51A6AB6BB001B0BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5BCBA91A6AB6BB001B0BBC /* PBXTargetDependency */,
+			);
+			name = MunchkinCounterTests;
+			productName = MunchkinCounterTests;
+			productReference = DD5BCBA71A6AB6BB001B0BBC /* MunchkinCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD5BCB871A6AB6BB001B0BBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = AlexGaesser;
+				TargetAttributes = {
+					DD5BCB8E1A6AB6BB001B0BBC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DD5BCBA61A6AB6BB001B0BBC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DD5BCB8E1A6AB6BB001B0BBC;
+					};
+				};
+			};
+			buildConfigurationList = DD5BCB8A1A6AB6BB001B0BBC /* Build configuration list for PBXProject "MunchkinCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD5BCB861A6AB6BB001B0BBC;
+			productRefGroup = DD5BCB901A6AB6BB001B0BBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD5BCB8E1A6AB6BB001B0BBC /* MunchkinCounter */,
+				DD5BCBA61A6AB6BB001B0BBC /* MunchkinCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD5BCB8D1A6AB6BB001B0BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5BCB9D1A6AB6BB001B0BBC /* Main.storyboard in Resources */,
+				DD5BCBA21A6AB6BB001B0BBC /* LaunchScreen.xib in Resources */,
+				DD5BCB9F1A6AB6BB001B0BBC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5BCBA51A6AB6BB001B0BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD5BCB8B1A6AB6BB001B0BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5BCB9A1A6AB6BB001B0BBC /* ViewController.swift in Sources */,
+				DD5BCB951A6AB6BB001B0BBC /* AppDelegate.swift in Sources */,
+				DD5BCB981A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5BCBA31A6AB6BB001B0BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5BCBAE1A6AB6BB001B0BBC /* MunchkinCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD5BCBA91A6AB6BB001B0BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD5BCB8E1A6AB6BB001B0BBC /* MunchkinCounter */;
+			targetProxy = DD5BCBA81A6AB6BB001B0BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD5BCB9B1A6AB6BB001B0BBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5BCB9C1A6AB6BB001B0BBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD5BCBA01A6AB6BB001B0BBC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5BCBA11A6AB6BB001B0BBC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD5BCBAF1A6AB6BB001B0BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD5BCBB01A6AB6BB001B0BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD5BCBB21A6AB6BB001B0BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MunchkinCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD5BCBB31A6AB6BB001B0BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MunchkinCounter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD5BCBB51A6AB6BB001B0BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MunchkinCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MunchkinCounter.app/MunchkinCounter";
+			};
+			name = Debug;
+		};
+		DD5BCBB61A6AB6BB001B0BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MunchkinCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MunchkinCounter.app/MunchkinCounter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD5BCB8A1A6AB6BB001B0BBC /* Build configuration list for PBXProject "MunchkinCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5BCBAF1A6AB6BB001B0BBC /* Debug */,
+				DD5BCBB01A6AB6BB001B0BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5BCBB11A6AB6BB001B0BBC /* Build configuration list for PBXNativeTarget "MunchkinCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5BCBB21A6AB6BB001B0BBC /* Debug */,
+				DD5BCBB31A6AB6BB001B0BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD5BCBB41A6AB6BB001B0BBC /* Build configuration list for PBXNativeTarget "MunchkinCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5BCBB51A6AB6BB001B0BBC /* Debug */,
+				DD5BCBB61A6AB6BB001B0BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD5BCB961A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD5BCB971A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodel */,
+			);
+			currentVersion = DD5BCB971A6AB6BB001B0BBC /* MunchkinCounter.xcdatamodel */;
+			path = MunchkinCounter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD5BCB871A6AB6BB001B0BBC /* Project object */;
+}
