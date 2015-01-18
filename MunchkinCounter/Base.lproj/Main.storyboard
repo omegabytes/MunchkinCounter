@@ -167,6 +167,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="84" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="levelDecrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="7Yo-Dg-xeY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pC-21-FZW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -178,6 +181,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="232" y="84" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="levelIncrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="GOn-oQ-OxB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-MN-eAt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -189,6 +195,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="162" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="combatDecrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="gBG-iN-XU3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-G4-HG5">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -200,6 +209,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="232" y="162" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="combatIncrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="S5E-5A-enc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSU-fn-eY8">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -211,6 +223,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="240" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="oneShotDecrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="sgo-9x-TjC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p91-kk-R38">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -222,6 +237,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="232" y="240" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="oneShotIncrementButtonPressed:" destination="shq-A3-x1F" eventType="touchUpInside" id="ure-Cf-7Yx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----------------------------------------------------" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kW-55-rkK">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -232,7 +250,7 @@
                                     <rect key="frame" x="16" y="298" width="348" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yus-W3-qmA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yus-W3-qmA">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -241,7 +259,7 @@
                                     <rect key="frame" x="73" y="343" width="70" height="70"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-Y1-pts">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-Y1-pts">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -257,24 +275,6 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="151" y="350" width="70" height="70"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-MN-4l0">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.75267269739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="229" y="425" width="79" height="30"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAG-M3-ne4">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="229" y="463" width="79" height="30"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-GR-PJW">
@@ -295,14 +295,45 @@
                                     <rect key="frame" x="87" y="327" width="42" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="47" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="062-FG-qxs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="062-FG-qxs">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="229" y="363" width="79" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="editTextFieldDidEnd:" destination="shq-A3-x1F" eventType="touchUpOutside" id="TAb-rn-tTQ"/>
+                                    <action selector="monsterTextField:" destination="shq-A3-x1F" eventType="editingDidEnd" id="GZQ-xy-mfd"/>
+                                </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-ti-mN4">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="88" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnU-gv-Zow">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="166" width="69" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Shot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLF-lu-LDk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="244" width="73" height="21"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-5b-l8U">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -314,6 +345,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-MN-4l0">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.75267269739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="229" y="420" width="100" height="40"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,13 +372,15 @@
                                 <exclude reference="yus-W3-qmA"/>
                                 <exclude reference="Bpj-Y1-pts"/>
                                 <exclude reference="YJI-UB-Cls"/>
-                                <exclude reference="N4n-MN-4l0"/>
-                                <exclude reference="NAG-M3-ne4"/>
                                 <exclude reference="FLO-GR-PJW"/>
                                 <exclude reference="GNh-tr-Bdq"/>
                                 <exclude reference="062-FG-qxs"/>
+                                <exclude reference="hvb-ti-mN4"/>
+                                <exclude reference="HnU-gv-Zow"/>
+                                <exclude reference="CLF-lu-LDk"/>
                                 <exclude reference="abQ-5b-l8U"/>
                                 <exclude reference="a6q-j8-1bT"/>
+                                <exclude reference="N4n-MN-4l0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -356,16 +398,27 @@
                                 <include reference="yus-W3-qmA"/>
                                 <include reference="Bpj-Y1-pts"/>
                                 <include reference="YJI-UB-Cls"/>
-                                <include reference="N4n-MN-4l0"/>
-                                <include reference="NAG-M3-ne4"/>
                                 <include reference="FLO-GR-PJW"/>
                                 <include reference="GNh-tr-Bdq"/>
                                 <include reference="062-FG-qxs"/>
+                                <include reference="hvb-ti-mN4"/>
+                                <include reference="HnU-gv-Zow"/>
+                                <include reference="CLF-lu-LDk"/>
                                 <exclude reference="abQ-5b-l8U"/>
                                 <exclude reference="a6q-j8-1bT"/>
+                                <include reference="N4n-MN-4l0"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="combatLabel" destination="mgC-O7-w1c" id="Ehc-BW-mpT"/>
+                        <outlet property="combatOutcomeTextLabel" destination="N4n-MN-4l0" id="jft-sB-WfS"/>
+                        <outlet property="effectiveCombatLabel" destination="yus-W3-qmA" id="9eo-yq-csg"/>
+                        <outlet property="levelLabel" destination="jCr-Ps-7qp" id="yDp-DY-E26"/>
+                        <outlet property="monsterCombatStrengthTextField" destination="062-FG-qxs" id="VOu-ik-Eh9"/>
+                        <outlet property="netCombatResultLabel" destination="Bpj-Y1-pts" id="qy6-mP-ufs"/>
+                        <outlet property="oneShotLabel" destination="ihc-J1-ioS" id="7ej-qO-3KX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH3-ce-CZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
