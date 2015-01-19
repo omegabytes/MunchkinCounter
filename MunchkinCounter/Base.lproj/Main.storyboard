@@ -277,6 +277,15 @@
                                     <rect key="frame" x="151" y="350" width="70" height="70"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-MN-4l0">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.75267269739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="208" y="420" width="121" height="40"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLO-GR-PJW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -295,16 +304,16 @@
                                     <rect key="frame" x="87" y="327" width="42" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="062-FG-qxs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="line" placeholder="0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="062-FG-qxs">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="229" y="363" width="79" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="editTextFieldDidEnd:" destination="shq-A3-x1F" eventType="touchUpOutside" id="TAb-rn-tTQ"/>
-                                    <action selector="monsterTextField:" destination="shq-A3-x1F" eventType="editingDidEnd" id="GZQ-xy-mfd"/>
+                                    <action selector="monsterLevelTextFieldEnd:" destination="shq-A3-x1F" eventType="editingDidEndOnExit" id="7Ch-zD-41L"/>
+                                    <action selector="monsterLevelTextFieldEnd:" destination="shq-A3-x1F" eventType="touchUpOutside" id="Tks-Bm-p8e"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-ti-mN4">
@@ -346,15 +355,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-MN-4l0">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.75267269739999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="229" y="420" width="100" height="40"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -372,6 +372,7 @@
                                 <exclude reference="yus-W3-qmA"/>
                                 <exclude reference="Bpj-Y1-pts"/>
                                 <exclude reference="YJI-UB-Cls"/>
+                                <exclude reference="N4n-MN-4l0"/>
                                 <exclude reference="FLO-GR-PJW"/>
                                 <exclude reference="GNh-tr-Bdq"/>
                                 <exclude reference="062-FG-qxs"/>
@@ -380,7 +381,6 @@
                                 <exclude reference="CLF-lu-LDk"/>
                                 <exclude reference="abQ-5b-l8U"/>
                                 <exclude reference="a6q-j8-1bT"/>
-                                <exclude reference="N4n-MN-4l0"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -398,6 +398,7 @@
                                 <include reference="yus-W3-qmA"/>
                                 <include reference="Bpj-Y1-pts"/>
                                 <include reference="YJI-UB-Cls"/>
+                                <include reference="N4n-MN-4l0"/>
                                 <include reference="FLO-GR-PJW"/>
                                 <include reference="GNh-tr-Bdq"/>
                                 <include reference="062-FG-qxs"/>
@@ -406,7 +407,6 @@
                                 <include reference="CLF-lu-LDk"/>
                                 <exclude reference="abQ-5b-l8U"/>
                                 <exclude reference="a6q-j8-1bT"/>
-                                <include reference="N4n-MN-4l0"/>
                             </mask>
                         </variation>
                     </view>
