@@ -1,6 +1,8 @@
 # MunchkinCounter
 Munchkin Companion App
 
+Last edited: (1/24/2014) Current Version: 0
+
 Introduction: 
 
 The project is in an early prototype stage. The core concepts are implemented, but there remains a lot of work to be done. The goals/stages are highlighted hereafter, and will be updated as both I become more proficient and the project becomes more focused.
