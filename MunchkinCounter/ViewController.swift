@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
+    
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext!
+    var fetchedResultsController:NSFetchedResultsController = NSFetchedResultsController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        fetchedResultsController = getFetchResultsController()
+        fetchedResultsController.delegate = self
+        fetchedResultsController.performFetch(nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +43,22 @@ class ViewController: UIViewController {
     @IBAction func settingsButtonPressed(sender: UIButton) {
         performSegueWithIdentifier("showSettings", sender: self)
     }
+    
+    // Helper Functions
+    
+    func userFetchRequest() -> NSFetchRequest {
+        let fetchRequest = NSFetchRequest(entityName: "UserModel")
+        
+        return fetchRequest
+    }
+    
+    func getFetchResultsController() -> NSFetchedResultsController {
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: userFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        
+        return fetchedResultsController
+    }
+    
+    
 }
 

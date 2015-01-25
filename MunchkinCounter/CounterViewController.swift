@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class CounterViewController: UIViewController {
+class CounterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var combatLabel: UILabel!
     @IBOutlet weak var oneShotLabel: UILabel!
@@ -17,20 +18,29 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var monsterCombatStrengthTextField: UITextField!
     @IBOutlet weak var combatOutcomeTextLabel: UILabel!
     
-    var level = 1
-    var combat = 0
-    var oneShot = 0
-    var monsterCombatStrength = 0
-    var effectiveCombat = 0
-    var netCombatResult = 0
+
+//    var user: UserModel!
+    
+//    var level = 1
+//    var combat = 0
+//    var oneShot = 0
+//    var monsterCombatStrength = 0
+//    var effectiveCombat = 0
+//    var netCombatResult = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-
-        monsterCombatStrength = monsterCombatStrengthTextField.text.toInt()!
+        
+        let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+        let managedObjectContext = appDelegate.managedObjectContext
+        let entityDescription = NSEntityDescription.entityForName("UserModel", inManagedObjectContext: managedObjectContext!)
+        let user = UserModel(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext!)
+        
+        user.level = 1
+        user.monsterCombatStrength = monsterCombatStrengthTextField.text.toInt()!
+        monsterCombatStrengthTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,23 +49,34 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func levelDecrementButtonPressed(sender: UIButton) {
-        if level >= 2 {
-        level -= 1
-            levelLabel.text = "\(level)"
-            effectiveCombat = calculateCombat(level, combat: combat, oneShot: oneShot)
-            effectiveCombatLabel.text = "\(effectiveCombat)"
-            netCombatResult = calculateNetCombatResult(effectiveCombat, monsterLevel: monsterCombatStrength)
-            netCombatResultLabel.text = "\(netCombatResult)"
-            updateOutcomeLabel()
+//        let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+//        let managedObjectContext = appDelegate.managedObjectContext
+//        let entityDescription = NSEntityDescription.entityForName("UserModel", inManagedObjectContext: managedObjectContext!)
+//        let user = UserModel(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext!)
+    
         
+        if user.level == 1 {
+            user.level = 1
+            appDelegate.saveContext()
         }
         else {
             
-            level = 1 }
+    user.level -= 1
+    levelLabel.text = "\(user.level)"
+    user.effectiveCombat = calculateCombat(user.level, combat: user.combat, oneShot: user.oneShot)
+    effectiveCombatLabel.text = "\(user.effectiveCombat)"
+    user.netCombatResult = calculateNetCombatResult(user.effectiveCombat, monsterLevel: user.monsterCombatStrength)
+    netCombatResultLabel.text = "\(user.netCombatResult)"
+    updateOutcomeLabel()
+    
+    appDelegate.saveContext()
+
+        }
     }
 
     @IBAction func levelIncrementButtonPressed(sender: UIButton) {
-        if level <= 9 {
+        
+        if user.level <= 9 {
             level += 1
             levelLabel.text = "\(level)"
             effectiveCombat = calculateCombat(level, combat: combat, oneShot: oneShot)
@@ -134,14 +155,20 @@ class CounterViewController: UIViewController {
         }
     }
     
-    @IBAction func monsterLevelTextFieldEnd(sender: UITextField) {
-        monsterCombatStrengthTextField.resignFirstResponder()
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
         updateOutcomeLabel()
-        
     }
     
-//    @IBAction func editTextFieldDidEnd(sender: UITextField) {
-//        monsterCombatStrengthTextField.resignFirstResponder()
+//    @IBAction func editMonsterLevelDidEnd(sender: UITextField) {
+//        self.monsterCombatStrengthTextField.endEditing(true)
+//        self.monsterCombatStrengthTextField.resignFirstResponder()
 //    }
     
+    
+//    func textFieldDidEndEditing(textField: UITextField) {
+//        
+//        textField.resignFirstResponder()
+//    }
+  
 }

@@ -312,6 +312,7 @@
                                     <rect key="frame" x="229" y="363" width="79" height="30"/>
                                 </variation>
                                 <connections>
+                                    <action selector="editMonsterLevelDidEnd:" destination="shq-A3-x1F" eventType="touchUpOutside" id="Qho-ig-u0J"/>
                                     <action selector="monsterLevelTextFieldEnd:" destination="shq-A3-x1F" eventType="editingDidEndOnExit" id="7Ch-zD-41L"/>
                                     <action selector="monsterLevelTextFieldEnd:" destination="shq-A3-x1F" eventType="touchUpOutside" id="Tks-Bm-p8e"/>
                                 </connections>
@@ -422,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH3-ce-CZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="-270"/>
+            <point key="canvasLocation" x="1887" y="429"/>
         </scene>
         <!--Qs And Rules View Controller-->
         <scene sceneID="aO5-QH-Ix9">
@@ -769,7 +770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cB-BK-85a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="429"/>
+            <point key="canvasLocation" x="1887" y="1140"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="uXv-Yl-fyo">
@@ -955,7 +956,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cf-Pd-M5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="429"/>
+            <point key="canvasLocation" x="2589" y="1140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="czw-sC-dbZ">

@@ -17,6 +17,7 @@
 		DD5BCBEF1A6AED98001B0BBC /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCBEE1A6AED98001B0BBC /* CounterViewController.swift */; };
 		DD5BCBF11A6AEDB2001B0BBC /* FAQsAndRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCBF01A6AEDB2001B0BBC /* FAQsAndRulesViewController.swift */; };
 		DD5BCBF31A6AEDD4001B0BBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BCBF21A6AEDD4001B0BBC /* SettingsViewController.swift */; };
+		DDF46D561A74658100B2A535 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF46D551A74658100B2A535 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DD5BCBEE1A6AED98001B0BBC /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		DD5BCBF01A6AEDB2001B0BBC /* FAQsAndRulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQsAndRulesViewController.swift; sourceTree = "<group>"; };
 		DD5BCBF21A6AEDD4001B0BBC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DDF46D551A74658100B2A535 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5BCB941A6AB6BB001B0BBC /* AppDelegate.swift */,
+				DDF46D551A74658100B2A535 /* UserModel.swift */,
 				DD5BCB991A6AB6BB001B0BBC /* ViewController.swift */,
 				DD5BCBF21A6AEDD4001B0BBC /* SettingsViewController.swift */,
 				DD5BCBF01A6AEDB2001B0BBC /* FAQsAndRulesViewController.swift */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5BCB9A1A6AB6BB001B0BBC /* ViewController.swift in Sources */,
+				DDF46D561A74658100B2A535 /* UserModel.swift in Sources */,
 				DD5BCBEF1A6AED98001B0BBC /* CounterViewController.swift in Sources */,
 				DD5BCBF11A6AEDB2001B0BBC /* FAQsAndRulesViewController.swift in Sources */,
 				DD5BCB951A6AB6BB001B0BBC /* AppDelegate.swift in Sources */,
